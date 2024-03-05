@@ -12,8 +12,17 @@
 
 #include "ft_printf.h"
 
-int	ft_printf(const char *format, ...)
+void ft_conver_format(va_list args, const char *s, int *i)
 {
-	va_list	args;
+	void *ptr;
+
+	if (s[0] == 'c')
+	{
+	}
+}
+
+int ft_printf(const char *format, ...)
+{
+	va_list args;
 	va_start(args, format);
 }

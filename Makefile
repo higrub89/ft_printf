@@ -18,8 +18,9 @@ REMOVE = rm -f
 ARFLAGS = -rcs
 AR = ar
 
-SRCS = ft_printf.c/ 
-
+SRCS =	ft_printf.c/
+				ft_putchar.c/
+				ft_putstr.c/	
 OBJS = $(SRCS:.c=.c)
 
 $(NAME) = $(OBJS)
