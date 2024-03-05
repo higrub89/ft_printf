@@ -12,7 +12,6 @@
 
 NAME = libftprintf.a
 
-LIBFT = ./libft/libft.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 REMOVE = rm -f
