@@ -11,6 +11,7 @@
 # **************************************************************************** #
 
 NAME = libftprintf.a
+LIBFT = libft/libft.a
 
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
@@ -18,17 +19,16 @@ REMOVE = rm -f
 ARFLAGS = -rcs
 AR = ar
 
-SRCS =	ft_printf.c/
-				ft_putchar.c/
-				ft_putstr.c/	
-OBJS = $(SRCS:.c=.c)
+SRCS =	ft_printf.c \
+	
+OBJS = $(SRCS:.c=.o)
 
 $(NAME) = $(OBJS)
 	$(AR) $(ARFLGS) $(NAME) $(OBJS)
 
-all = $(NAME)
+all = $(NAME) $(LIBFT)
 
-%.o: %.c
+%.o:%.c
 	$(CC) -c $(CFLAGS) $< -o $@
 
 clean:

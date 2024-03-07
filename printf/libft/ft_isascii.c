@@ -1,24 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rhiguita <rhiguita@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rhiguita <rhiguita@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/29 01:10:36 by rhiguita          #+#    #+#             */
-/*   Updated: 2024/03/03 18:39:50 by rhiguita         ###   ########.fr       */
+/*   Created: 2024/01/08 16:18:47 by rhiguita          #+#    #+#             */
+/*   Updated: 2024/01/28 09:42:33 by rhiguita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-#define FT_PRINTF_H
+#include "libft.h"
 
-#include <stdarg.h>
-#include <unistd.h>
-#include <stdlib.h>
+int	ft_isascii(int i)
+{
+	if (i >= 0 && i <= 127)
+		return (1);
+	else
+		return (0);
+}
+/*
+int	main(void)
+{
+	int	i = '&';
 
-int ft_printf(const char *str, ...);
-void ft_putchar(int c);
-void ft_putstr(char *s);
+	int res = ft_isascii(i);
 
-#endif
+	printf("Resultado: %i\n", res);
+	return (0);
+}*/
