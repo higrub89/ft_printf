@@ -6,7 +6,7 @@
 /*   By: rhiguita <rhiguita@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 19:21:21 by rhiguita          #+#    #+#             */
-/*   Updated: 2024/03/12 01:56:52 by rhiguita         ###   ########.fr       */
+/*   Updated: 2024/03/16 22:57:32 by rhiguita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	ft_ptr(void *format, int *i)
 	rec_print(n, base, i);
 }
 /*
+// Imprime un puntero en numero hexadecimal en minusculas.
 int	main(void)
 {
 	int i = 0;
